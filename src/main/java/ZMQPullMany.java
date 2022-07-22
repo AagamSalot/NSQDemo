@@ -1,7 +1,7 @@
 import org.zeromq.ZMQ;
 
 public class ZMQPullMany {
-    public static void  main(String args[]) {
+    public static void  main(String args[]) throws InterruptedException {
         ZMQ.Context context = ZMQ.context( 1 );
         ZMQ.Socket pull = context.socket(ZMQ.PULL);
 
